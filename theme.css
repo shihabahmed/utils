@@ -1,0 +1,83 @@
+:root {
+  --red--: 243 71 74;
+  --blue--: 0 150 236;
+  --green--: 91 179 0;
+  --yellow--: 245 181 0;
+
+  --red: rgb(var(--red--));
+  --blue: rgb(var(--blue--));
+  --green: rgb(var(--green--));
+  --yellow: rgb(var(--yellow--));
+}
+
+.red {
+  --color--: var(--red--);
+  --color: var(--red);
+}
+
+.blue {
+  --color--: var(--blue--);
+  --color: var(--blue);
+}
+
+.green {
+  --color--: var(--green--);
+  --color: var(--green);
+}
+
+.yellow {
+  --color--: var(--yellow--);
+  --color: var(--yellow);
+}
+
+
+/* Links - START */
+
+a {
+  color: var(--blue);
+}
+
+a:hover, a:focus {
+  background: var(--color);
+  background: linear-gradient(90deg, var(--purple) 30%, var(--black) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Links - START */
+
+
+/* Buttons - START */
+
+.btn,
+.btn.focus,
+.btn:focus {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  padding: 7.25px 18px;
+  white-space: nowrap;
+  background-color: var(--color, var(--black));
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px var(--color, var(--black)) inset;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 0 100px rgb(0 0 0 / 20%) inset;
+}
+
+.btn.btn-outline {
+  color: var(--color, var(--black));
+  background-color: transparent;
+}
+
+.btn.btn-outline:hover {
+  color: #fff;
+  background-color: var(--color, var(--black));
+  box-shadow: none;
+}
+
+/* Buttons - END */
