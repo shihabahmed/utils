@@ -1,5 +1,4 @@
 ; (function (j) {
-
 	var _private = {
 		draw: function (defaultOptions, obj) {
 			_private.render(defaultOptions, obj);
@@ -14,7 +13,6 @@
 		},
 
 		render: function (defaultOptions, obj) {
-
 			clearInterval(obj.swapInterval);
 
 			//var windowWidth = obj.Window.width(),
